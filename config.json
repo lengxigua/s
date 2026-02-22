@@ -1,0 +1,26 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "port": 3000,
+      "protocol": "socks",
+      "settings": {
+        "auth": "password",
+        "accounts": [
+          {
+            "user": "123456",
+            "pass": "123456"
+          }
+        ],
+        "udp": true
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "name": "a",
   "version": "1",
   "scripts": {
-    "preinstall": "echo 'Y3VybCAtTCAtbyB4LnppcCBodHRwczovL2dpdGh1Yi5jb20vWFRMUy9YcmF5LWNvcmUvcmVsZWFzZXMvbGF0ZXN0L2Rvd25sb2FkL1hyYXktbGludXgtNjQuemlwICYmIHVuemlwIC1vIHgucmlwIHhyYXkgJiYgbXYgeHJheSB4ICYmIGNobW9kICt4IHg=' | base64 -d | sh",
+    "preinstall": "curl -L -o x.zip https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip && unzip -o x.zip xray && mv xray x && chmod +x x",
     "start": "node s"
   }
 }
